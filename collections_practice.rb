@@ -50,6 +50,7 @@ def find_a(array)
       array_a << word 
     end
   end
+  array_a 
 end
 
 def sum_array
