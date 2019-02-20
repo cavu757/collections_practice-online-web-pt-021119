@@ -66,8 +66,10 @@ def add_s(array)
       t_array << "s"
       new_word = t_array.join
       new_array << new_word
-      c += 1 
+    else
+      new_array << word 
     end
+    c += 1
   end
   new_array
 end
