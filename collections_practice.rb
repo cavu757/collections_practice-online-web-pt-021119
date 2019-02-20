@@ -7,11 +7,11 @@ def sort_array_desc(array)
 end
 
 def sort_array_char_count(array)
-  array.sort 
+  array.each 
 end
 
 def swap_elements(array)
-  array.sort.yield[word]
+  
 end
 
 def reverse_array
