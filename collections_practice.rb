@@ -22,9 +22,9 @@ end
 
 def swap_elements_from_to(array, index, destination_index)
   temp_ind = array[index]
-  temp_dest = array[dest]
+  temp_dest = array[destination_index]
   array[index] = temp_dest
-  array[dest] = temp_ind
+  array[destination_index] = temp_ind
   array
 end
 
