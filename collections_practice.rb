@@ -61,3 +61,18 @@ def add_s(array)
   array.each_with_index.collect {|word, index| index!=1? word << "s" : word} 
 end
 
+# versus
+#new_array = []
+#c=0 
+#array.each do |word|
+#  if c != 1 
+#   t_array = word.split(//)
+#   t_array << "s"
+#   new_word = t_array.join
+#   new_array << new_word
+# else
+#   new_array << word 
+# end
+# c += 1
+#end
+#new_array
