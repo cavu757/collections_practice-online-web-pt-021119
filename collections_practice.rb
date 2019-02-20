@@ -58,18 +58,6 @@ def sum_array(array)
 end
 
 def add_s(array)
-  new_array = []
-  array.each_with_index.collect {|word, index|
-    if index != 1 
-      t_array = word.split(//)
-      t_array << "s"
-      new_word = t_array.join
-      new_array << new_word
-    else
-      new_array << word 
-    end
-    c += 1
-  end
-  new_array
+  array.each_with_index.collect {|word, index| index!=1? word << "s" : word} 
 end
 
