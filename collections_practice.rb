@@ -59,9 +59,8 @@ end
 
 def add_s(array)
   new_array = []
-  c=0 
-  array.each do |word|
-    if c != 1 
+  array.each_with_index.collect {|word, index|
+    if index != 1 
       t_array = word.split(//)
       t_array << "s"
       new_word = t_array.join
