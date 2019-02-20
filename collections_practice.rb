@@ -34,6 +34,8 @@ end
 
 def kesha_maker(array)
   array.each do |word|
+    t_array = word.split(//)
+    t_array[3] = "$"
     
 end
 
