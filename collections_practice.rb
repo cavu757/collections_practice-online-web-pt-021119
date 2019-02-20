@@ -57,7 +57,17 @@ def sum_array(array)
   array.inject (:+)
 end
 
-def add_s
-  
+def add_s(array)
+  new_array = []
+  c=0 
+  array.each do |word|
+    if c != 1 
+      t_array = word.split(//)
+      t_array << "s"
+      new_word = t_array.join
+      new_array << new_word
+    end
+  end
+  new_array
 end
 
