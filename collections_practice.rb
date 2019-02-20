@@ -33,10 +33,14 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
+  new_array = []
   array.each do |word|
     t_array = word.split(//)
     t_array[3] = "$"
-    
+    new_word = t_array.join
+    new_array << new_word
+  end
+  new_array
 end
 
 def find_a
